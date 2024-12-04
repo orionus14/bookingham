@@ -12,10 +12,10 @@ const BookItem: React.FC<IBookItem> = ({ img, title, author }) => {
             <img
                 src={`/${img}`}
                 alt={title}
-                className=''
+                className='w-full h-[80%] object-cover shadow-gray-500'
             />
-            <p>{title}</p>
-            <p>{author === 'Unknown' ? '' : author}</p>
+            <p className='text-xl my-4'>{title}</p>
+            <p className='text-gray-500'>{author === 'Unknown' ? '' : author}</p>
         </>
     )
 }
