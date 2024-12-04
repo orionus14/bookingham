@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BookItem = () => {
+const BookPage = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const BookItem = () => {
   )
 }
 
-export default BookItem
+export default BookPage
