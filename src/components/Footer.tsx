@@ -1,10 +1,9 @@
-import React from 'react'
 import HoverText from './HoverText'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className='bg-black px-12 py-4 '>
+    <footer className='bg-black px-16 py-8 '>
       <div className='flex flex-wrap justify-end'>
         <div className='mx-10'>
           <h3 className='text-white text-xl underline'>About Us</h3>
@@ -41,7 +40,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className='logo'>
+      <div className='logo mt-4 mb-8'>
         <h1 className='text-3xl text-white text-center mb-2'>Bookingham</h1>
         <div className='flex space-x-2 justify-center'>
           <a href="https://www.facebook.com/">
@@ -55,7 +54,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className='text-white text-xs text-center mt-8'>
+      <div className='text-white text-xs text-center'>
         &copy; 2024 All Rights Reserved
       </div>
     </footer>

@@ -1,9 +1,12 @@
 import React from 'react'
+import Filter from '../components/Filter'
+import GenerateBooks from '../components/GenerateBooks'
 
 const BookList = () => {
   return (
-    <div>
-      
+    <div className='flex'>
+      <Filter />
+      <GenerateBooks />
     </div>
   )
 }
