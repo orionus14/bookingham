@@ -2,11 +2,20 @@ import InputField from './InputField'
 import H2Text from './H2Text'
 import books from '../data/books.json'
 import CheckboxList from './CheckboxList'
+import { useState } from 'react'
+
+type pageAmount = '1 - 300' | '301 - 600' | '600+' | '';
 
 const Filter = () => {
 
   const languages = [...new Set(books.map(book => book.language))];
   const pages = ['1 - 300', '301 - 600', '600+'];
+
+  const [bookName, setBookName] = useState<string>('');
+  const [minPrice, setMinPrice] = useState<string>('');
+  const [maxPrice, setMaxPrice] = useState<string>('');
+  const [chosenLanguage, setChosenLanguage] = useState<string[]>([]);
+  const [pageAmount, setPageAmount] = useState<pageAmount>('')
 
   return (
     <div className='w-60 p-4 border-r-2'>
