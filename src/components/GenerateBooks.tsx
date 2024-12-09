@@ -4,11 +4,14 @@ import { useMemo, useState } from 'react';
 import { Pagination } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
+import DropdownMenu from './DropdownMenu';
 
 const GenerateBooks = () => {
     const filters = useSelector((state: RootState) => state.filters);
+
     const itemsPerPage = 9;
     const [currentPage, setCurrentPage] = useState<number>(1);
+    const [sortOption, setSortOption] = useState<string | null>(null);
 
     const filteredBooks = useMemo(() => {
         return books.filter((book) => {
@@ -44,12 +47,35 @@ const GenerateBooks = () => {
         });
     }, [filters]);
 
+    const sortedBooks = useMemo(() => {
+        const sorted = [...filteredBooks];
+
+        switch (sortOption) {
+            case 'Rating':
+                return sorted.sort((a, b) => b.rating - a.rating);
+            case 'From A to Z':
+                return sorted.sort((a, b) => a.title.localeCompare(b.title));
+            case 'From Z to A':
+                return sorted.sort((a, b) => b.title.localeCompare(a.title));
+            case 'Ascending Price':
+                return sorted.sort((a, b) => a.price - b.price);
+            case 'Descending Price':
+                return sorted.sort((a, b) => b.price - a.price);
+            case 'Ascending Page':
+                return sorted.sort((a, b) => a.pages - b.pages);
+            case 'Descending Page':
+                return sorted.sort((a, b) => b.pages - a.pages);
+            default:
+                return filteredBooks;
+        }
+    }, [filteredBooks, sortOption]);
+
     const currentBooks = useMemo(() => {
-        return filteredBooks.slice(
+        return sortedBooks.slice(
             (currentPage - 1) * itemsPerPage,
             currentPage * itemsPerPage
         );
-    }, [filteredBooks, currentPage]);
+    }, [sortedBooks, currentPage]);
 
     const handlePageChange = (_event: React.ChangeEvent<unknown>, page: number) => {
         setCurrentPage(page);
@@ -57,6 +83,8 @@ const GenerateBooks = () => {
     return (
         <div className='p-4 pb-12 w-full'>
             <h1 className="text-2xl text-center border-b-2 mb-4 p-2">All Books</h1>
+
+            <DropdownMenu onSortChange={setSortOption} />
 
             {filteredBooks.length === 0 ? (
                 <div className="text-center text-xl text-gray-500">
