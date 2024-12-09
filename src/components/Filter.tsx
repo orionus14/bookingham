@@ -2,47 +2,85 @@ import InputField from './InputField'
 import H2Text from './H2Text'
 import books from '../data/books.json'
 import CheckboxList from './CheckboxList'
-import { useState } from 'react'
-
-type pageAmount = '1 - 300' | '301 - 600' | '600+' | '';
+import { Button } from '@mui/material'
+import { useDispatch, useSelector } from 'react-redux';
+import { setFilter, resetFilters } from '../store/filterSlice'
+import { RootState } from '../store/store'
 
 const Filter = () => {
 
-  const languages = [...new Set(books.map(book => book.language))];
-  const pages = ['1 - 300', '301 - 600', '600+'];
+  const dispatch = useDispatch();
+  const filters = useSelector((state: RootState) => state.filters);
 
-  const [bookName, setBookName] = useState<string>('');
-  const [minPrice, setMinPrice] = useState<string>('');
-  const [maxPrice, setMaxPrice] = useState<string>('');
-  const [chosenLanguage, setChosenLanguage] = useState<string[]>([]);
-  const [pageAmount, setPageAmount] = useState<pageAmount>('')
+  const languages = [...new Set(books.map(book => book.language))];
+  const pages: string[] = ['1 - 300', '301 - 600', '600+'];
+
+  const handleFilterChange = <T extends keyof typeof filters>(
+    key: T,
+    value: typeof filters[T]
+  ) => {
+    dispatch(setFilter({key, value}))
+  }
+
+  const resetAllFilters = () => {
+    dispatch(resetFilters());
+  }
 
   return (
     <div className='w-60 p-4 border-r-2'>
       <h1 className="text-2xl text-center border-b-2 mb-4 p-2">Filter</h1>
-      <InputField placeholder='Enter the book name...' width='w-full' />
+      <InputField
+        placeholder='Enter the book name...'
+        width='w-full'
+        value={filters.bookName}
+        onChange={e => handleFilterChange('bookName', e.target.value)}
+      />
 
       <div>
         <H2Text text='Enter the price' />
         <div className='flex justify-between items-center'>
-          <InputField placeholder='Min' width='w-1/3' />
+          <InputField
+            placeholder='Min'
+            width='w-1/3'
+            value={filters.minPrice}
+            onChange={e => handleFilterChange('minPrice', e.target.value)}
+          />
           &mdash;
-          <InputField placeholder='Max' width='w-1/3' />
+          <InputField
+            placeholder='Max'
+            width='w-1/3'
+            value={filters.maxPrice}
+            onChange={e => handleFilterChange('maxPrice', e.target.value)}
+          />
         </div>
       </div>
 
       <div>
         <H2Text text='Choose the language' />
         <div>
-          <CheckboxList categories={languages} name='languages' />
+          <CheckboxList
+            categories={languages}
+            name='languages'
+            selectedValues={filters.chosenLanguage}
+            onChange={selected => handleFilterChange('chosenLanguage', selected)}
+          />
         </div>
       </div>
 
       <div>
         <H2Text text='Pages Amount' />
         <div>
-          <CheckboxList categories={pages} name='pages' />
+          <CheckboxList
+            categories={pages}
+            name='pages'
+            selectedValues={filters.pageAmount}
+            onChange={selected => handleFilterChange('pageAmount', selected)}
+          />
         </div>
+      </div>
+
+      <div className='flex justify-center mt-4'>
+        <Button variant='contained' color='primary' onClick={resetAllFilters}>Reset Filters</Button>
       </div>
 
     </div>
