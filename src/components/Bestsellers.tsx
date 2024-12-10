@@ -21,6 +21,7 @@ const Bestsellers = () => {
               img={book.imageLink}
               title={book.title}
               author={book.author}
+              price={book.price}
             />
           </li>
         ))}

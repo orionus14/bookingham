@@ -3,10 +3,11 @@ import React from 'react'
 interface IBookItem {
     img: string;
     title: string;
-    author: string
+    author: string;
+    price: number;
 }
 
-const BookItem: React.FC<IBookItem> = ({ img, title, author }) => {
+const BookItem: React.FC<IBookItem> = ({ img, title, author, price }) => {
     return (
         <>
             <img
@@ -14,7 +15,8 @@ const BookItem: React.FC<IBookItem> = ({ img, title, author }) => {
                 alt={title}
                 className='w-full h-[80%] object-cover shadow-gray-500'
             />
-            <p className='text-xl my-4'>{title}</p>
+            <p>&#x24;{price}</p>
+            <p className='text-xl my-2'>{title}</p>
             <p className='text-gray-500'>{author === 'Unknown' ? '' : author}</p>
         </>
     )

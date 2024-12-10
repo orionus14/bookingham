@@ -2,7 +2,7 @@ import InputField from './InputField'
 import H2Text from './H2Text'
 import books from '../data/books.json'
 import CheckboxList from './CheckboxList'
-import { Button } from '@mui/material'
+import { Button, Slider } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter, resetFilters } from '../store/filterSlice'
 import { RootState } from '../store/store'
@@ -15,16 +15,26 @@ const Filter = () => {
   const languages = [...new Set(books.map(book => book.language))];
   const pages: string[] = ['1 - 300', '301 - 600', '600+'];
 
+  const minPrice = Math.min(...books.map(book => book.price));
+  const maxPrice = Math.max(...books.map(book => book.price));
+
   const handleFilterChange = <T extends keyof typeof filters>(
     key: T,
     value: typeof filters[T]
   ) => {
-    dispatch(setFilter({key, value}))
+    dispatch(setFilter({ key, value }))
   }
 
   const resetAllFilters = () => {
     dispatch(resetFilters());
   }
+
+  const handleSliderChange = (_: Event, newValue: number | number[]) => {
+    if (Array.isArray(newValue)) {
+      handleFilterChange('minPrice', newValue[0].toString());
+      handleFilterChange('maxPrice', newValue[1].toString());
+    }
+  };
 
   return (
     <div className='w-60 p-4 border-r-2'>
@@ -51,6 +61,18 @@ const Filter = () => {
             width='w-1/3'
             value={filters.maxPrice}
             onChange={e => handleFilterChange('maxPrice', e.target.value)}
+          />
+        </div>
+        <div className='mt-4'>
+          <Slider
+            value={[
+              Number(filters.minPrice) || minPrice,
+              Number(filters.maxPrice) || maxPrice,
+            ]}
+            onChange={handleSliderChange}
+            min={minPrice}
+            max={maxPrice}
+            valueLabelDisplay='auto'
           />
         </div>
       </div>

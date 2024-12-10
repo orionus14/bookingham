@@ -1,6 +1,6 @@
 import BookItem from './BookItem'
 import books from '../data/books.json'
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Pagination } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
@@ -9,7 +9,7 @@ import DropdownMenu from './DropdownMenu';
 const GenerateBooks = () => {
     const filters = useSelector((state: RootState) => state.filters);
 
-    const itemsPerPage = 9;
+    const itemsPerPage = 6;
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [sortOption, setSortOption] = useState<string | null>(null);
 
@@ -80,11 +80,20 @@ const GenerateBooks = () => {
     const handlePageChange = (_event: React.ChangeEvent<unknown>, page: number) => {
         setCurrentPage(page);
     }
+
+    const resetPageToOne = () => {
+        setCurrentPage(1);
+    };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [currentPage]);
+
     return (
         <div className='p-4 pb-12 w-full'>
             <h1 className="text-2xl text-center border-b-2 mb-4 p-2">All Books</h1>
 
-            <DropdownMenu onSortChange={setSortOption} />
+            <DropdownMenu onSortChange={setSortOption} onResetPage={resetPageToOne} />
 
             {filteredBooks.length === 0 ? (
                 <div className="text-center text-xl text-gray-500">
@@ -105,6 +114,7 @@ const GenerateBooks = () => {
                                     img={book.imageLink}
                                     title={book.title}
                                     author={book.author}
+                                    price={book.price}
                                 />
                             </li>
                         ))}

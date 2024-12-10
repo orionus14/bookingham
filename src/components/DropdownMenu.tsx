@@ -4,13 +4,17 @@ import { useState } from 'react'
 
 interface IDropdownMenu {
     onSortChange: (sortOption: string) => void;
+    onResetPage: () => void;
 }
 
-const DropdownMenu: React.FC<IDropdownMenu> = ({ onSortChange }) => {
+const DropdownMenu: React.FC<IDropdownMenu> = ({ onSortChange, onResetPage }) => {
 
     const [dropdownMenu, setDropdownMenu] = useState<boolean>(false);
 
     const handleOptionClick = (option: string) => {
+        if (option === 'Default') {
+            onResetPage(); 
+        }
         onSortChange(option);
         setDropdownMenu(false);
     };
@@ -19,7 +23,7 @@ const DropdownMenu: React.FC<IDropdownMenu> = ({ onSortChange }) => {
         <>
             <div
                 className='inline-flex justify-center items-center text-xl 
-                relative cursor-pointer px-4 py-2 border w-44'
+                relative cursor-pointer px-4 py-2 border w-44 hover:bg-gray-100'
                 onClick={() => setDropdownMenu(!dropdownMenu)}
             >
                 Sort By <div className={`${dropdownMenu ? 'rotate-180' : ''}`}>
