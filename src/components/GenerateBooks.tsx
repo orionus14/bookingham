@@ -101,6 +101,15 @@ const GenerateBooks = () => {
                 </div>
             ) : (
                 <>
+                    <div className='flex justify-center mt-4'>
+                        <Pagination
+                            count={Math.ceil(filteredBooks.length / itemsPerPage)}
+                            page={currentPage}
+                            onChange={handlePageChange}
+                            color='primary'
+                            size='large'
+                        />
+                    </div>
                     <ul
                         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
                         justify-items-center gap-8 py-8'

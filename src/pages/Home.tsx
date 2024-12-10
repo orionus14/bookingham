@@ -1,10 +1,19 @@
 import Bestsellers from "../components/Bestsellers"
-import Slider from "../components/Slider"
+import Carousel from "../components/Carousel"
+
+const images = [
+  '/carousel/a-Dolls-house.jpg',
+  '/carousel/a-la-recherche-du-temps-perdu.jpg',
+  '/carousel/absalom-absalom.jpg',
+  '/carousel/gargantua-and-pantagruel.jpg',
+  '/carousel/great-expectations.jpg',
+  '/carousel/gullivers-travels.jpg',
+];
 
 const Home = () => {
   return (
     <>
-      <Slider />
+      <Carousel images={images} />
       <Bestsellers />
     </>
   )
