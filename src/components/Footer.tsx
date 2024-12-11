@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin } from 'lucide-react'
 const Footer = () => {
   return (
     <footer className='bg-black px-16 py-8 '>
-      <div className='flex flex-wrap justify-end'>
+      <div className='flex flex-wrap justify-center'>
         <div className='mx-10'>
           <h3 className='text-white text-xl underline'>About Us</h3>
           <ul>

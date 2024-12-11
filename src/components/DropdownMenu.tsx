@@ -31,7 +31,7 @@ const DropdownMenu: React.FC<IDropdownMenu> = ({ onSortChange, onResetPage }) =>
                 </div>
             </div>
             {dropdownMenu && (
-                <div className="absolute bg-white p-2 w-44 border shadow-md">
+                <div className="absolute z-10 bg-white p-2 w-44 border shadow-md">
                     <div
                         className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleOptionClick('Default')}

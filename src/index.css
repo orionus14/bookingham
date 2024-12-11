@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'swiper/swiper-bundle.min.css';
-
 @layer base {
     body {
         @apply font-sans;

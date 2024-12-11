@@ -5,6 +5,7 @@ import { Pagination } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 import DropdownMenu from './DropdownMenu';
+import { Link } from 'react-router';
 
 const GenerateBooks = () => {
     const filters = useSelector((state: RootState) => state.filters);
@@ -114,17 +115,19 @@ const GenerateBooks = () => {
                         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
                         justify-items-center gap-8 py-8'
                     >
-                        {currentBooks.map((book, index) => (
+                        {currentBooks.map(book => (
                             <li
-                                key={index}
-                                className='h-[520px] w-[280px] border-b-2 border-gray-300'
+                                key={book.id}
+                                className='h-128 w-64 border-b-2 border-gray-300'
                             >
-                                <BookItem
-                                    img={book.imageLink}
-                                    title={book.title}
-                                    author={book.author}
-                                    price={book.price}
-                                />
+                                <Link to={`/books/${book.id}`}>
+                                    <BookItem
+                                        img={book.imageLink}
+                                        title={book.title}
+                                        author={book.author}
+                                        price={book.price}
+                                    />
+                                </Link>
                             </li>
                         ))}
                     </ul>

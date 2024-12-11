@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'ui-sans-serif', 'system-ui'],
       },
+      spacing: {
+        128: '32rem'
+      }
     },
   },
   plugins: [],

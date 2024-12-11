@@ -31,7 +31,7 @@ const Carousel: React.FC<ICarousel> = ({ images }) => {
     }, [userInteracted, images.length]);
 
     return (
-        <div className="relative w-full h-[calc(100vh-64px)] mx-auto">
+        <div className="relative z-0 w-full h-[calc(100vh-64px)] mx-auto">
             <div className="overflow-hidden h-full">
                 <div
                     className="flex transition-transform duration-500"
@@ -77,8 +77,8 @@ const Carousel: React.FC<ICarousel> = ({ images }) => {
                             handleDotClick(index);
                             setUserInteracted(true);
                         }}
-                        className={`w-3 h-3 rounded-full bg-white border-2 border-transparent ${currentIndex === index ? 'bg-blue-500' : 'bg-opacity-50'
-                            }`}
+                        className={`w-3 h-3 rounded-full border-2 border-transparent 
+                            ${currentIndex === index ? 'bg-blue-500' : 'bg-white bg-opacity-50'}`}
                     ></button>
                 ))}
             </div>

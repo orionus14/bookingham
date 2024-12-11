@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 interface IBookItem {
+    id: string;
     img: string;
     title: string;
     author: string;

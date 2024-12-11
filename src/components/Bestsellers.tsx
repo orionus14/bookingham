@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import books from '../data/books.json'
 import BookItem from './BookItem';
 
@@ -14,15 +15,18 @@ const Bestsellers = () => {
         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
         justify-items-center gap-8 py-8'
       >
-        {topBooks.map((book, index) => (
-          <li className='h-[520px] w-[280px] border-b-2 border-gray-300'>
-            <BookItem
-              key={index}
-              img={book.imageLink}
-              title={book.title}
-              author={book.author}
-              price={book.price}
-            />
+        {topBooks.map(book => (
+          <li
+            key={book.id}
+            className='h-[520px] w-[280px] border-b-2 border-gray-300'>
+            <Link to={`/books/${book.id}`}>
+              <BookItem
+                img={book.imageLink}
+                title={book.title}
+                author={book.author}
+                price={book.price}
+              />
+            </Link>
           </li>
         ))}
       </ul>

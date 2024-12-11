@@ -1,9 +1,42 @@
-import React from 'react'
+import { useParams } from "react-router";
+import books from '../data/books.json'
 
 const BookPage = () => {
+  const { id } = useParams<{ id: string }>();
+  const book = books.find((b) => b.id.toString() === id);
+
+  if (!book) {
+    return (
+      <div className="h-[calc(100vh-64px)] text-center text-xl text-gray-500">
+        Book not found :(
+      </div>
+    );
+  }
+
   return (
-    <div>
-      
+    <div className="p-4 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
+      <div className="flex gap-8">
+        <img
+          src={`/${book.imageLink}`}
+          alt={book.title}
+          className="w-1/3 rounded shadow-lg"
+        />
+        <div>
+          <p className="text-xl">
+            <strong>Author:</strong> {book.author}
+          </p>
+          <p className="text-xl">
+            <strong>Language:</strong> {book.language}
+          </p>
+          <p className="text-xl">
+            <strong>Pages:</strong> {book.pages}
+          </p>
+          <p className="text-xl">
+            <strong>Price:</strong> ${book.price}
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
