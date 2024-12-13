@@ -1,11 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
 import NavItem from './NavItem'
-import { Menu, X } from 'lucide-react'
+import { BookOpenText, Menu, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import BurgerMenu from './BurgerMenu'
 
 const Navbar = () => {
-    const navClass = 'flex justify-between items-center h-16 bg-black text-white px-16 fixed z-10 w-screen'
+    const navClass = 'flex justify-between items-center h-16 bg-black text-white px-8  sm:px-12 md:px-16 fixed z-10 w-screen'
     const [showBurgerMenu, setShowBurgerMenu] = useState<boolean>(false);
     const location = useLocation();
     const menuRef = useRef<HTMLDivElement | null>(null);
@@ -48,7 +48,12 @@ const Navbar = () => {
         <header className="h-16">
             <nav className={navClass} >
                 <div className="text-xl">
-                    <Link to='/'>Bookingham</Link>
+                    <Link to='/'>
+                        <div className='flex items-center'>
+                            <BookOpenText className='mr-2' />
+                            Bookingham
+                        </div>
+                    </Link>
                 </div>
                 <div className="hidden sm:flex space-x-4">
                     <li>

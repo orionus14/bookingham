@@ -6,6 +6,8 @@ import { Button, Slider } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter, resetFilters } from '../store/filterSlice'
 import { RootState } from '../store/store'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Filter = () => {
 
@@ -17,6 +19,8 @@ const Filter = () => {
 
   const minPrice = Math.min(...books.map(book => book.price));
   const maxPrice = Math.max(...books.map(book => book.price));
+
+  const location = useLocation();
 
   const handleFilterChange = <T extends keyof typeof filters>(
     key: T,
@@ -36,6 +40,10 @@ const Filter = () => {
     }
   };
 
+  useEffect(() => {
+    resetAllFilters();
+  }, [location])
+
   return (
     <div className='w-60 p-4 border-r-2'>
       <h1 className="text-2xl text-center border-b-2 mb-4 p-2">Filter</h1>
@@ -45,6 +53,17 @@ const Filter = () => {
         value={filters.bookName}
         onChange={e => handleFilterChange('bookName', e.target.value)}
       />
+
+      <div className='mt-4'>
+        <CheckboxList
+          categories={['At a discount']}
+          name="discount"
+          selectedValues={filters.hasDiscount ? ['At a discount'] : []}
+          onChange={(selected) =>
+            handleFilterChange('hasDiscount', selected.includes('At a discount'))
+          }
+        />
+      </div>
 
       <div>
         <H2Text text='Enter the price' />
@@ -63,6 +82,7 @@ const Filter = () => {
             onChange={e => handleFilterChange('maxPrice', e.target.value)}
           />
         </div>
+
         <div className='mt-4'>
           <Slider
             value={[

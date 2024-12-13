@@ -6,6 +6,7 @@ interface FilterState {
     maxPrice: string;
     chosenLanguage: string[];
     pageAmount: string[];
+    hasDiscount: boolean;
 }
 
 const initialState: FilterState = {
@@ -14,6 +15,7 @@ const initialState: FilterState = {
     maxPrice: '',
     chosenLanguage: [],
     pageAmount: [],
+    hasDiscount: false,
 }
 
 const filterSlice = createSlice({

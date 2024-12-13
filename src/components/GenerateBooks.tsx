@@ -44,7 +44,11 @@ const GenerateBooks = () => {
                 })
                 : true;
 
-            return matchesName && matchesPrice && matchesLanguage && matchesPages;
+            const matchesDiscount = filters.hasDiscount
+                ? typeof book.oldPrice === 'number'
+                : true;
+
+            return matchesName && matchesPrice && matchesLanguage && matchesPages && matchesDiscount;
         });
     }, [filters]);
 
@@ -126,6 +130,7 @@ const GenerateBooks = () => {
                                         title={book.title}
                                         author={book.author}
                                         price={book.price}
+                                        oldPrice={book.oldPrice}
                                     />
                                 </Link>
                             </li>

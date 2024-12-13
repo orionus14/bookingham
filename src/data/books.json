@@ -11,7 +11,8 @@
     "rating": 1.96,
     "ratingAmount": 1119,
     "price": 21.99,
-    "id": "8c352030-8f7e-428b-8fe0-7ae46555c700"
+    "id": "8c352030-8f7e-428b-8fe0-7ae46555c700",
+    "oldPrice": "none"
   },
   {
     "author": "Hans Christian Andersen",
@@ -25,7 +26,8 @@
     "rating": 2.61,
     "ratingAmount": 1539,
     "price": 26.99,
-    "id": "c7379b5d-c7db-4464-8e6a-d5421afd4c74"
+    "id": "c7379b5d-c7db-4464-8e6a-d5421afd4c74",
+    "oldPrice": "none"
   },
   {
     "author": "Dante Alighieri",
@@ -39,7 +41,8 @@
     "rating": 4.77,
     "ratingAmount": 2320,
     "price": 9.99,
-    "id": "c8b1fc52-41b9-4dcc-9651-67ccd094b610"
+    "id": "c8b1fc52-41b9-4dcc-9651-67ccd094b610",
+    "oldPrice": "none"
   },
   {
     "author": "Unknown",
@@ -53,7 +56,8 @@
     "rating": 4,
     "ratingAmount": 4913,
     "price": 24.99,
-    "id": "31ee411a-3683-4e6a-888b-90ae185d8fee"
+    "id": "31ee411a-3683-4e6a-888b-90ae185d8fee",
+    "oldPrice": "none"
   },
   {
     "author": "Unknown",
@@ -67,7 +71,8 @@
     "rating": 1.94,
     "ratingAmount": 4226,
     "price": 13.99,
-    "id": "bb598a46-4630-48ff-a651-2b0965f99114"
+    "id": "bb598a46-4630-48ff-a651-2b0965f99114",
+    "oldPrice": 18.05
   },
   {
     "author": "Unknown",
@@ -81,7 +86,8 @@
     "rating": 4.82,
     "ratingAmount": 2833,
     "price": 14.99,
-    "id": "2bcb1816-7cc8-4ee4-a5c0-8b2e7529617a"
+    "id": "2bcb1816-7cc8-4ee4-a5c0-8b2e7529617a",
+    "oldPrice": "none"
   },
   {
     "author": "Unknown",
@@ -95,7 +101,8 @@
     "rating": 2.08,
     "ratingAmount": 559,
     "price": 12.99,
-    "id": "fd10e915-0da5-435f-9a5d-b25a09faf729"
+    "id": "fd10e915-0da5-435f-9a5d-b25a09faf729",
+    "oldPrice": "none"
   },
   {
     "author": "Jane Austen",
@@ -109,7 +116,8 @@
     "rating": 4.48,
     "ratingAmount": 1502,
     "price": 12.99,
-    "id": "e00c08d8-e569-4222-989e-25edac318570"
+    "id": "e00c08d8-e569-4222-989e-25edac318570",
+    "oldPrice": "none"
   },
   {
     "author": "Honoré de Balzac",
@@ -123,7 +131,8 @@
     "rating": 2.59,
     "ratingAmount": 3888,
     "price": 18.99,
-    "id": "48d6aac5-27df-4cb1-84e4-9e66383c59c9"
+    "id": "48d6aac5-27df-4cb1-84e4-9e66383c59c9",
+    "oldPrice": "none"
   },
   {
     "author": "Samuel Beckett",
@@ -137,7 +146,8 @@
     "rating": 4.8,
     "ratingAmount": 2678,
     "price": 16.99,
-    "id": "2e41e030-9767-4a96-9940-2aa6572d085b"
+    "id": "2e41e030-9767-4a96-9940-2aa6572d085b",
+    "oldPrice": 20.9
   },
   {
     "author": "Giovanni Boccaccio",
@@ -151,7 +161,8 @@
     "rating": 1.5,
     "ratingAmount": 1375,
     "price": 22.99,
-    "id": "62990f6e-c79c-403b-9d1f-456ddcc9d93b"
+    "id": "62990f6e-c79c-403b-9d1f-456ddcc9d93b",
+    "oldPrice": "none"
   },
   {
     "author": "Jorge Luis Borges",
@@ -165,7 +176,8 @@
     "rating": 3.79,
     "ratingAmount": 3707,
     "price": 6.99,
-    "id": "a68a928f-2289-4b2b-86b8-01c17cfe7e39"
+    "id": "a68a928f-2289-4b2b-86b8-01c17cfe7e39",
+    "oldPrice": "none"
   },
   {
     "author": "Emily Brontë",
@@ -179,7 +191,8 @@
     "rating": 1.86,
     "ratingAmount": 2314,
     "price": 25.99,
-    "id": "9411b929-9bb5-438f-a1d8-5c0a5f525078"
+    "id": "9411b929-9bb5-438f-a1d8-5c0a5f525078",
+    "oldPrice": "none"
   },
   {
     "author": "Albert Camus",
@@ -193,7 +206,8 @@
     "rating": 1.91,
     "ratingAmount": 4604,
     "price": 23.99,
-    "id": "43d590f5-21f2-48f2-88dd-8df3f7196238"
+    "id": "43d590f5-21f2-48f2-88dd-8df3f7196238",
+    "oldPrice": "none"
   },
   {
     "author": "Paul Celan",
@@ -207,7 +221,8 @@
     "rating": 2.04,
     "ratingAmount": 3109,
     "price": 24.99,
-    "id": "39dfe5d5-ae7b-41c2-8d52-375e70fb36cb"
+    "id": "39dfe5d5-ae7b-41c2-8d52-375e70fb36cb",
+    "oldPrice": 29.99
   },
   {
     "author": "Louis-Ferdinand Céline",
@@ -221,7 +236,8 @@
     "rating": 2.42,
     "ratingAmount": 1069,
     "price": 18.99,
-    "id": "d75eb756-cbc8-4f23-aa96-0ec801e32351"
+    "id": "d75eb756-cbc8-4f23-aa96-0ec801e32351",
+    "oldPrice": "none"
   },
   {
     "author": "Miguel de Cervantes",
@@ -235,7 +251,8 @@
     "rating": 1.76,
     "ratingAmount": 243,
     "price": 21.99,
-    "id": "ef750647-dffe-4aa2-ba6d-bf0294bb253e"
+    "id": "ef750647-dffe-4aa2-ba6d-bf0294bb253e",
+    "oldPrice": "none"
   },
   {
     "author": "Geoffrey Chaucer",
@@ -249,7 +266,8 @@
     "rating": 4.1,
     "ratingAmount": 1693,
     "price": 27.99,
-    "id": "c1bb301c-bfd6-4422-a715-6f0271d89abc"
+    "id": "c1bb301c-bfd6-4422-a715-6f0271d89abc",
+    "oldPrice": "none"
   },
   {
     "author": "Anton Chekhov",
@@ -263,7 +281,8 @@
     "rating": 2.65,
     "ratingAmount": 4203,
     "price": 17.99,
-    "id": "15c09176-488f-4024-b845-b135c3dc1f07"
+    "id": "15c09176-488f-4024-b845-b135c3dc1f07",
+    "oldPrice": "none"
   },
   {
     "author": "Joseph Conrad",
@@ -277,7 +296,8 @@
     "rating": 2.91,
     "ratingAmount": 2280,
     "price": 27.99,
-    "id": "facdd869-14d8-4ab3-9a36-8df574f8c8cd"
+    "id": "facdd869-14d8-4ab3-9a36-8df574f8c8cd",
+    "oldPrice": 35.55
   },
   {
     "author": "Charles Dickens",
@@ -291,7 +311,8 @@
     "rating": 3.54,
     "ratingAmount": 4123,
     "price": 19.99,
-    "id": "ae87b8fc-e0b9-4a18-8762-f65b51c8a56c"
+    "id": "ae87b8fc-e0b9-4a18-8762-f65b51c8a56c",
+    "oldPrice": "none"
   },
   {
     "author": "Denis Diderot",
@@ -305,7 +326,8 @@
     "rating": 3.67,
     "ratingAmount": 4367,
     "price": 29.99,
-    "id": "da8b1f9a-9d7e-463a-aff4-61c82ce295d1"
+    "id": "da8b1f9a-9d7e-463a-aff4-61c82ce295d1",
+    "oldPrice": "none"
   },
   {
     "author": "Alfred Döblin",
@@ -319,7 +341,8 @@
     "rating": 4.89,
     "ratingAmount": 2863,
     "price": 9.99,
-    "id": "7fb7fa92-9505-49c5-af55-b4c586a857e9"
+    "id": "7fb7fa92-9505-49c5-af55-b4c586a857e9",
+    "oldPrice": "none"
   },
   {
     "author": "Fyodor Dostoevsky",
@@ -333,7 +356,8 @@
     "rating": 2.79,
     "ratingAmount": 2909,
     "price": 6.99,
-    "id": "03857fdb-2a34-4fae-a100-7ca7e339d30a"
+    "id": "03857fdb-2a34-4fae-a100-7ca7e339d30a",
+    "oldPrice": "none"
   },
   {
     "author": "Fyodor Dostoevsky",
@@ -347,7 +371,8 @@
     "rating": 2.44,
     "ratingAmount": 1260,
     "price": 25.99,
-    "id": "f1055bc8-8b63-42a3-a19e-8fb3d36aafd1"
+    "id": "f1055bc8-8b63-42a3-a19e-8fb3d36aafd1",
+    "oldPrice": 32.49
   },
   {
     "author": "Fyodor Dostoevsky",
@@ -361,7 +386,8 @@
     "rating": 1.68,
     "ratingAmount": 3171,
     "price": 20.99,
-    "id": "baca53e1-68f6-4169-a538-a66dcf7af006"
+    "id": "baca53e1-68f6-4169-a538-a66dcf7af006",
+    "oldPrice": "none"
   },
   {
     "author": "Fyodor Dostoevsky",
@@ -375,7 +401,8 @@
     "rating": 2.5,
     "ratingAmount": 2071,
     "price": 11.99,
-    "id": "33d2be35-fb70-4b6f-bd79-dfe648215a13"
+    "id": "33d2be35-fb70-4b6f-bd79-dfe648215a13",
+    "oldPrice": "none"
   },
   {
     "author": "George Eliot",
@@ -389,7 +416,8 @@
     "rating": 1.6,
     "ratingAmount": 1843,
     "price": 22.99,
-    "id": "1b61f2bb-86a1-4c05-9639-97c7b66ea5a3"
+    "id": "1b61f2bb-86a1-4c05-9639-97c7b66ea5a3",
+    "oldPrice": "none"
   },
   {
     "author": "Ralph Ellison",
@@ -403,7 +431,8 @@
     "rating": 1.57,
     "ratingAmount": 1694,
     "price": 17.99,
-    "id": "c5258ea1-651c-45e8-835b-ed5900b910e2"
+    "id": "c5258ea1-651c-45e8-835b-ed5900b910e2",
+    "oldPrice": "none"
   },
   {
     "author": "Euripides",
@@ -417,7 +446,8 @@
     "rating": 1.87,
     "ratingAmount": 4937,
     "price": 13.99,
-    "id": "add56fba-1608-46b5-8600-18aa887ee524"
+    "id": "add56fba-1608-46b5-8600-18aa887ee524",
+    "oldPrice": 15.53
   },
   {
     "author": "William Faulkner",
@@ -431,7 +461,8 @@
     "rating": 4.81,
     "ratingAmount": 2893,
     "price": 9.99,
-    "id": "cdfe878b-2ec2-4658-a459-df0c320bf8f7"
+    "id": "cdfe878b-2ec2-4658-a459-df0c320bf8f7",
+    "oldPrice": "none"
   },
   {
     "author": "William Faulkner",
@@ -445,7 +476,8 @@
     "rating": 2.21,
     "ratingAmount": 921,
     "price": 20.99,
-    "id": "a797158d-d79f-4263-a8a0-21d29e9dfb6f"
+    "id": "a797158d-d79f-4263-a8a0-21d29e9dfb6f",
+    "oldPrice": "none"
   },
   {
     "author": "Gustave Flaubert",
@@ -459,7 +491,8 @@
     "rating": 2.36,
     "ratingAmount": 1169,
     "price": 28.99,
-    "id": "fc49feb4-2dfc-4843-ad45-d916b1e0526b"
+    "id": "fc49feb4-2dfc-4843-ad45-d916b1e0526b",
+    "oldPrice": "none"
   },
   {
     "author": "Gustave Flaubert",
@@ -473,7 +506,8 @@
     "rating": 2.74,
     "ratingAmount": 3097,
     "price": 26.99,
-    "id": "48c6d96f-dfb0-4e36-9792-4cbe2cf60015"
+    "id": "48c6d96f-dfb0-4e36-9792-4cbe2cf60015",
+    "oldPrice": "none"
   },
   {
     "author": "Federico García Lorca",
@@ -487,7 +521,8 @@
     "rating": 4.89,
     "ratingAmount": 2716,
     "price": 17.99,
-    "id": "25a71ab9-5a2f-425c-89f3-2d64d6bcc53c"
+    "id": "25a71ab9-5a2f-425c-89f3-2d64d6bcc53c",
+    "oldPrice": 20.87
   },
   {
     "author": "Gabriel García Márquez",
@@ -501,7 +536,8 @@
     "rating": 3.87,
     "ratingAmount": 2319,
     "price": 18.99,
-    "id": "6875bbd1-f0a4-42b7-8f81-00659537e953"
+    "id": "6875bbd1-f0a4-42b7-8f81-00659537e953",
+    "oldPrice": "none"
   },
   {
     "author": "Gabriel García Márquez",
@@ -515,7 +551,8 @@
     "rating": 4.4,
     "ratingAmount": 4253,
     "price": 15.99,
-    "id": "35b869dc-2285-4180-bda2-b25b5bf6ae02"
+    "id": "35b869dc-2285-4180-bda2-b25b5bf6ae02",
+    "oldPrice": "none"
   },
   {
     "author": "Johann Wolfgang von Goethe",
@@ -529,7 +566,8 @@
     "rating": 1.41,
     "ratingAmount": 3977,
     "price": 26.99,
-    "id": "2d12eedb-d009-4e6c-9ab7-68fe0125e254"
+    "id": "2d12eedb-d009-4e6c-9ab7-68fe0125e254",
+    "oldPrice": "none"
   },
   {
     "author": "Nikolai Gogol",
@@ -543,7 +581,8 @@
     "rating": 4.7,
     "ratingAmount": 1172,
     "price": 8.99,
-    "id": "c97f855e-78d6-4868-aac7-600501c48340"
+    "id": "c97f855e-78d6-4868-aac7-600501c48340",
+    "oldPrice": "none"
   },
   {
     "author": "Günter Grass",
@@ -557,7 +596,8 @@
     "rating": 2.87,
     "ratingAmount": 3144,
     "price": 11.99,
-    "id": "98ecf398-01ae-4e4b-bb0b-18061a9c429c"
+    "id": "98ecf398-01ae-4e4b-bb0b-18061a9c429c",
+    "oldPrice": 14.15
   },
   {
     "author": "João Guimarães Rosa",
@@ -571,7 +611,8 @@
     "rating": 1.06,
     "ratingAmount": 706,
     "price": 15.99,
-    "id": "a2ead3be-5407-4e42-92dc-c277cc0eded3"
+    "id": "a2ead3be-5407-4e42-92dc-c277cc0eded3",
+    "oldPrice": "none"
   },
   {
     "author": "Knut Hamsun",
@@ -585,7 +626,8 @@
     "rating": 1.6,
     "ratingAmount": 1904,
     "price": 26.99,
-    "id": "095b0e21-68b2-467e-a528-60f24d5ab2f5"
+    "id": "095b0e21-68b2-467e-a528-60f24d5ab2f5",
+    "oldPrice": "none"
   },
   {
     "author": "Ernest Hemingway",
@@ -599,7 +641,8 @@
     "rating": 1.95,
     "ratingAmount": 1729,
     "price": 14.99,
-    "id": "643de01f-1303-48dc-9c18-d7a6bd5c5cec"
+    "id": "643de01f-1303-48dc-9c18-d7a6bd5c5cec",
+    "oldPrice": "none"
   },
   {
     "author": "Homer",
@@ -613,7 +656,8 @@
     "rating": 2.91,
     "ratingAmount": 2151,
     "price": 21.99,
-    "id": "871a323c-0392-4144-a48a-073cb5d690dd"
+    "id": "871a323c-0392-4144-a48a-073cb5d690dd",
+    "oldPrice": "none"
   },
   {
     "author": "Homer",
@@ -627,7 +671,8 @@
     "rating": 2.48,
     "ratingAmount": 3854,
     "price": 16.99,
-    "id": "4a9785cf-519e-46ed-a946-7f4b02f1dc35"
+    "id": "4a9785cf-519e-46ed-a946-7f4b02f1dc35",
+    "oldPrice": 20.73
   },
   {
     "author": "Henrik Ibsen",
@@ -641,7 +686,8 @@
     "rating": 2.99,
     "ratingAmount": 696,
     "price": 6.99,
-    "id": "2aaf0dd2-ef49-46e6-a9ab-64e1bcc8bd57"
+    "id": "2aaf0dd2-ef49-46e6-a9ab-64e1bcc8bd57",
+    "oldPrice": "none"
   },
   {
     "author": "James Joyce",
@@ -655,7 +701,8 @@
     "rating": 2.92,
     "ratingAmount": 1260,
     "price": 15.99,
-    "id": "acf41bec-32da-42ca-8f70-112c1f317eab"
+    "id": "acf41bec-32da-42ca-8f70-112c1f317eab",
+    "oldPrice": "none"
   },
   {
     "author": "Franz Kafka",
@@ -669,7 +716,8 @@
     "rating": 3.7,
     "ratingAmount": 3475,
     "price": 17.99,
-    "id": "345cdb0a-105c-4f8f-9d7c-ec36a5342430"
+    "id": "345cdb0a-105c-4f8f-9d7c-ec36a5342430",
+    "oldPrice": "none"
   },
   {
     "author": "Franz Kafka",
@@ -683,7 +731,8 @@
     "rating": 4.19,
     "ratingAmount": 4031,
     "price": 21.99,
-    "id": "bd603ea0-768e-468d-a261-7063125bace0"
+    "id": "bd603ea0-768e-468d-a261-7063125bace0",
+    "oldPrice": "none"
   },
   {
     "author": "Franz Kafka",
@@ -697,7 +746,8 @@
     "rating": 3.52,
     "ratingAmount": 3200,
     "price": 23.99,
-    "id": "5354fe7b-7e01-446b-bbda-aded5d9e5615"
+    "id": "5354fe7b-7e01-446b-bbda-aded5d9e5615",
+    "oldPrice": 30.23
   },
   {
     "author": "Kālidāsa",
@@ -711,7 +761,8 @@
     "rating": 4.32,
     "ratingAmount": 4990,
     "price": 11.99,
-    "id": "da812c30-66ce-4842-a3e9-514d41c3d1c7"
+    "id": "da812c30-66ce-4842-a3e9-514d41c3d1c7",
+    "oldPrice": "none"
   },
   {
     "author": "Yasunari Kawabata",
@@ -725,7 +776,8 @@
     "rating": 1.37,
     "ratingAmount": 4148,
     "price": 22.99,
-    "id": "fd343e81-15e8-4932-b4d4-dedc092cc5af"
+    "id": "fd343e81-15e8-4932-b4d4-dedc092cc5af",
+    "oldPrice": "none"
   },
   {
     "author": "Nikos Kazantzakis",
@@ -739,7 +791,8 @@
     "rating": 4.99,
     "ratingAmount": 3619,
     "price": 15.99,
-    "id": "aa92c863-505e-48a2-a714-63cc874a2032"
+    "id": "aa92c863-505e-48a2-a714-63cc874a2032",
+    "oldPrice": "none"
   },
   {
     "author": "D. H. Lawrence",
@@ -753,7 +806,8 @@
     "rating": 3.46,
     "ratingAmount": 1890,
     "price": 14.99,
-    "id": "11687457-1766-4d8e-a680-7ed3a3bc0038"
+    "id": "11687457-1766-4d8e-a680-7ed3a3bc0038",
+    "oldPrice": "none"
   },
   {
     "author": "Halldór Laxness",
@@ -767,7 +821,8 @@
     "rating": 2.24,
     "ratingAmount": 2620,
     "price": 26.99,
-    "id": "99d49c0a-8d00-4dc1-b207-98bdee906bf0"
+    "id": "99d49c0a-8d00-4dc1-b207-98bdee906bf0",
+    "oldPrice": 32.12
   },
   {
     "author": "Giacomo Leopardi",
@@ -781,7 +836,8 @@
     "rating": 1.95,
     "ratingAmount": 1469,
     "price": 27.99,
-    "id": "af61de55-3126-44c9-80c3-ffb5edee566e"
+    "id": "af61de55-3126-44c9-80c3-ffb5edee566e",
+    "oldPrice": "none"
   },
   {
     "author": "Doris Lessing",
@@ -795,7 +851,8 @@
     "rating": 2.64,
     "ratingAmount": 2480,
     "price": 21.99,
-    "id": "663a5e2f-6510-4260-885f-2105d4329cfe"
+    "id": "663a5e2f-6510-4260-885f-2105d4329cfe",
+    "oldPrice": "none"
   },
   {
     "author": "Astrid Lindgren",
@@ -809,7 +866,8 @@
     "rating": 3.94,
     "ratingAmount": 3280,
     "price": 24.99,
-    "id": "351c1798-3efe-484e-a6cb-68fa556db521"
+    "id": "351c1798-3efe-484e-a6cb-68fa556db521",
+    "oldPrice": "none"
   },
   {
     "author": "Lu Xun",
@@ -823,7 +881,8 @@
     "rating": 1.37,
     "ratingAmount": 4721,
     "price": 24.99,
-    "id": "ea0072c2-b81d-4206-9403-612915c5c301"
+    "id": "ea0072c2-b81d-4206-9403-612915c5c301",
+    "oldPrice": "none"
   },
   {
     "author": "Naguib Mahfouz",
@@ -837,7 +896,8 @@
     "rating": 2.48,
     "ratingAmount": 4804,
     "price": 12.99,
-    "id": "fc419e8f-9064-4cf9-8653-970075f3c575"
+    "id": "fc419e8f-9064-4cf9-8653-970075f3c575",
+    "oldPrice": 16.89
   },
   {
     "author": "Thomas Mann",
@@ -851,7 +911,8 @@
     "rating": 3.85,
     "ratingAmount": 384,
     "price": 23.99,
-    "id": "af831699-311d-4e45-a183-a4341603d059"
+    "id": "af831699-311d-4e45-a183-a4341603d059",
+    "oldPrice": "none"
   },
   {
     "author": "Thomas Mann",
@@ -865,7 +926,8 @@
     "rating": 4.25,
     "ratingAmount": 3032,
     "price": 13.99,
-    "id": "62efc672-d9ff-4475-a2dd-a0ac98a97d66"
+    "id": "62efc672-d9ff-4475-a2dd-a0ac98a97d66",
+    "oldPrice": "none"
   },
   {
     "author": "Herman Melville",
@@ -879,7 +941,8 @@
     "rating": 2.67,
     "ratingAmount": 1991,
     "price": 12.99,
-    "id": "549a6b74-00c9-4154-9ac4-0aaeb68097a2"
+    "id": "549a6b74-00c9-4154-9ac4-0aaeb68097a2",
+    "oldPrice": "none"
   },
   {
     "author": "Michel de Montaigne",
@@ -893,7 +956,8 @@
     "rating": 2.84,
     "ratingAmount": 4898,
     "price": 20.99,
-    "id": "98ea3fe6-a091-4b59-addd-19bd3591f474"
+    "id": "98ea3fe6-a091-4b59-addd-19bd3591f474",
+    "oldPrice": "none"
   },
   {
     "author": "Elsa Morante",
@@ -907,7 +971,8 @@
     "rating": 1.12,
     "ratingAmount": 2979,
     "price": 21.99,
-    "id": "6491c3ff-11ba-4182-adc9-a0e6ebe6d5ac"
+    "id": "6491c3ff-11ba-4182-adc9-a0e6ebe6d5ac",
+    "oldPrice": 25.07
   },
   {
     "author": "Toni Morrison",
@@ -921,7 +986,8 @@
     "rating": 2.33,
     "ratingAmount": 4415,
     "price": 28.99,
-    "id": "5ebe6d38-d316-4687-a100-c149b993096d"
+    "id": "5ebe6d38-d316-4687-a100-c149b993096d",
+    "oldPrice": "none"
   },
   {
     "author": "Murasaki Shikibu",
@@ -935,7 +1001,8 @@
     "rating": 2.67,
     "ratingAmount": 721,
     "price": 24.99,
-    "id": "89672d5e-df47-44e8-b293-a5c79a09e6e4"
+    "id": "89672d5e-df47-44e8-b293-a5c79a09e6e4",
+    "oldPrice": "none"
   },
   {
     "author": "Robert Musil",
@@ -949,7 +1016,8 @@
     "rating": 4.74,
     "ratingAmount": 1997,
     "price": 9.99,
-    "id": "5b13d781-daae-4234-baa8-2743d153ed95"
+    "id": "5b13d781-daae-4234-baa8-2743d153ed95",
+    "oldPrice": "none"
   },
   {
     "author": "Vladimir Nabokov",
@@ -963,7 +1031,8 @@
     "rating": 3.89,
     "ratingAmount": 4786,
     "price": 22.99,
-    "id": "e84810b8-e3ce-4020-ba42-ee1b84dde6c3"
+    "id": "e84810b8-e3ce-4020-ba42-ee1b84dde6c3",
+    "oldPrice": "none"
   },
   {
     "author": "George Orwell",
@@ -977,7 +1046,8 @@
     "rating": 1.15,
     "ratingAmount": 4796,
     "price": 10.99,
-    "id": "040c2835-bf91-4111-be60-97f439ddead4"
+    "id": "040c2835-bf91-4111-be60-97f439ddead4",
+    "oldPrice": 12.64
   },
   {
     "author": "Ovid",
@@ -991,7 +1061,8 @@
     "rating": 2.8,
     "ratingAmount": 1303,
     "price": 10.99,
-    "id": "2760e417-684b-4dd0-b7f2-06ed2d327089"
+    "id": "2760e417-684b-4dd0-b7f2-06ed2d327089",
+    "oldPrice": "none"
   },
   {
     "author": "Fernando Pessoa",
@@ -1005,7 +1076,8 @@
     "rating": 1.27,
     "ratingAmount": 4636,
     "price": 8.99,
-    "id": "d627b44e-02b2-49ee-841b-33a94760540f"
+    "id": "d627b44e-02b2-49ee-841b-33a94760540f",
+    "oldPrice": "none"
   },
   {
     "author": "Edgar Allan Poe",
@@ -1019,7 +1091,8 @@
     "rating": 1.21,
     "ratingAmount": 1344,
     "price": 28.99,
-    "id": "07627860-4aea-4fb8-b3d1-44334b8c5937"
+    "id": "07627860-4aea-4fb8-b3d1-44334b8c5937",
+    "oldPrice": "none"
   },
   {
     "author": "Marcel Proust",
@@ -1033,7 +1106,8 @@
     "rating": 4.97,
     "ratingAmount": 4009,
     "price": 28.99,
-    "id": "883600ed-12d4-4c6b-b848-d493ba573ec8"
+    "id": "883600ed-12d4-4c6b-b848-d493ba573ec8",
+    "oldPrice": "none"
   },
   {
     "author": "François Rabelais",
@@ -1047,7 +1121,8 @@
     "rating": 1.74,
     "ratingAmount": 2710,
     "price": 28.99,
-    "id": "01d1e9ef-0550-4d24-b3a5-0afdcf9223b4"
+    "id": "01d1e9ef-0550-4d24-b3a5-0afdcf9223b4",
+    "oldPrice": 33.92
   },
   {
     "author": "Juan Rulfo",
@@ -1061,7 +1136,8 @@
     "rating": 3.86,
     "ratingAmount": 2511,
     "price": 22.99,
-    "id": "32162b2e-6ee8-4e2b-b9de-8982b923059d"
+    "id": "32162b2e-6ee8-4e2b-b9de-8982b923059d",
+    "oldPrice": "none"
   },
   {
     "author": "Rumi",
@@ -1075,7 +1151,8 @@
     "rating": 1.34,
     "ratingAmount": 3573,
     "price": 24.99,
-    "id": "c8f627bf-6a50-42be-92e5-e562c0025d58"
+    "id": "c8f627bf-6a50-42be-92e5-e562c0025d58",
+    "oldPrice": "none"
   },
   {
     "author": "Salman Rushdie",
@@ -1089,7 +1166,8 @@
     "rating": 3.39,
     "ratingAmount": 133,
     "price": 16.99,
-    "id": "f179ae04-e654-454b-b2d2-6eae342c8e15"
+    "id": "f179ae04-e654-454b-b2d2-6eae342c8e15",
+    "oldPrice": "none"
   },
   {
     "author": "Saadi",
@@ -1103,7 +1181,8 @@
     "rating": 2.55,
     "ratingAmount": 4707,
     "price": 6.99,
-    "id": "b592ab73-333a-4f40-8174-14ae1cf7c60f"
+    "id": "b592ab73-333a-4f40-8174-14ae1cf7c60f",
+    "oldPrice": "none"
   },
   {
     "author": "Tayeb Salih",
@@ -1117,7 +1196,8 @@
     "rating": 1.46,
     "ratingAmount": 158,
     "price": 15.99,
-    "id": "e9806cf0-3c7e-416f-92a4-500c8dfefa7c"
+    "id": "e9806cf0-3c7e-416f-92a4-500c8dfefa7c",
+    "oldPrice": 18.23
   },
   {
     "author": "José Saramago",
@@ -1131,7 +1211,8 @@
     "rating": 2.98,
     "ratingAmount": 4157,
     "price": 8.99,
-    "id": "f0f66b38-1b6e-476f-83cf-3b322229253e"
+    "id": "f0f66b38-1b6e-476f-83cf-3b322229253e",
+    "oldPrice": "none"
   },
   {
     "author": "William Shakespeare",
@@ -1145,7 +1226,8 @@
     "rating": 1.43,
     "ratingAmount": 365,
     "price": 29.99,
-    "id": "41404a05-babe-4e99-86c1-67903e06886b"
+    "id": "41404a05-babe-4e99-86c1-67903e06886b",
+    "oldPrice": "none"
   },
   {
     "author": "William Shakespeare",
@@ -1159,7 +1241,8 @@
     "rating": 2.94,
     "ratingAmount": 3390,
     "price": 21.99,
-    "id": "3d528f43-93b2-41b1-8ddc-7814b3b88842"
+    "id": "3d528f43-93b2-41b1-8ddc-7814b3b88842",
+    "oldPrice": "none"
   },
   {
     "author": "William Shakespeare",
@@ -1173,7 +1256,8 @@
     "rating": 3.1,
     "ratingAmount": 4843,
     "price": 11.99,
-    "id": "d5f9b2b9-4cd5-4eec-95c5-579e0fb4ea45"
+    "id": "d5f9b2b9-4cd5-4eec-95c5-579e0fb4ea45",
+    "oldPrice": "none"
   },
   {
     "author": "Sophocles",
@@ -1187,7 +1271,8 @@
     "rating": 4.5,
     "ratingAmount": 4558,
     "price": 15.99,
-    "id": "b6d27445-69a6-48d9-a78d-5f48bc312da7"
+    "id": "b6d27445-69a6-48d9-a78d-5f48bc312da7",
+    "oldPrice": 17.75
   },
   {
     "author": "Stendhal",
@@ -1201,7 +1286,8 @@
     "rating": 2.86,
     "ratingAmount": 477,
     "price": 13.99,
-    "id": "a83efc34-ffc8-43a5-a730-f2ffc611f1fe"
+    "id": "a83efc34-ffc8-43a5-a730-f2ffc611f1fe",
+    "oldPrice": "none"
   },
   {
     "author": "Laurence Sterne",
@@ -1215,7 +1301,8 @@
     "rating": 3.58,
     "ratingAmount": 1155,
     "price": 26.99,
-    "id": "7983aa86-37bd-4273-9bdd-b1e1c587a661"
+    "id": "7983aa86-37bd-4273-9bdd-b1e1c587a661",
+    "oldPrice": "none"
   },
   {
     "author": "Italo Svevo",
@@ -1229,7 +1316,8 @@
     "rating": 1.29,
     "ratingAmount": 337,
     "price": 14.99,
-    "id": "e6f58987-8675-488e-9efc-b6fcf16f4991"
+    "id": "e6f58987-8675-488e-9efc-b6fcf16f4991",
+    "oldPrice": "none"
   },
   {
     "author": "Jonathan Swift",
@@ -1243,7 +1331,8 @@
     "rating": 4.19,
     "ratingAmount": 2518,
     "price": 16.99,
-    "id": "b5930ae7-8d6e-4b22-a74a-97901f8982f1"
+    "id": "b5930ae7-8d6e-4b22-a74a-97901f8982f1",
+    "oldPrice": "none"
   },
   {
     "author": "Leo Tolstoy",
@@ -1257,7 +1346,8 @@
     "rating": 3.45,
     "ratingAmount": 4769,
     "price": 18.99,
-    "id": "d0e7f780-29d8-468a-aa7f-5adf21fdd79f"
+    "id": "d0e7f780-29d8-468a-aa7f-5adf21fdd79f",
+    "oldPrice": 23.74
   },
   {
     "author": "Leo Tolstoy",
@@ -1271,7 +1361,8 @@
     "rating": 1.4,
     "ratingAmount": 1399,
     "price": 7.99,
-    "id": "96346bd0-dd31-4554-9417-751ca7167657"
+    "id": "96346bd0-dd31-4554-9417-751ca7167657",
+    "oldPrice": "none"
   },
   {
     "author": "Leo Tolstoy",
@@ -1285,7 +1376,8 @@
     "rating": 2.14,
     "ratingAmount": 2050,
     "price": 8.99,
-    "id": "43092354-7ca3-4693-9d63-bdd906122f10"
+    "id": "43092354-7ca3-4693-9d63-bdd906122f10",
+    "oldPrice": "none"
   },
   {
     "author": "Mark Twain",
@@ -1299,7 +1391,8 @@
     "rating": 3.75,
     "ratingAmount": 1554,
     "price": 28.99,
-    "id": "7a88d0e2-8b38-4661-a24c-da4736719e34"
+    "id": "7a88d0e2-8b38-4661-a24c-da4736719e34",
+    "oldPrice": "none"
   },
   {
     "author": "Valmiki",
@@ -1313,7 +1406,8 @@
     "rating": 4.67,
     "ratingAmount": 3432,
     "price": 20.99,
-    "id": "a3ccd86c-f4cd-4711-b513-1ee4e88d94b4"
+    "id": "a3ccd86c-f4cd-4711-b513-1ee4e88d94b4",
+    "oldPrice": "none"
   },
   {
     "author": "Virgil",
@@ -1327,7 +1421,8 @@
     "rating": 4.44,
     "ratingAmount": 959,
     "price": 19.99,
-    "id": "ed31457c-bd8a-46fd-bc99-1a0b986a89fa"
+    "id": "ed31457c-bd8a-46fd-bc99-1a0b986a89fa",
+    "oldPrice": 25.79
   },
   {
     "author": "Vyasa",
@@ -1341,7 +1436,8 @@
     "rating": 4.82,
     "ratingAmount": 4157,
     "price": 9.99,
-    "id": "4b37c15c-d57c-4e6c-a1ab-f31b6f81eb79"
+    "id": "4b37c15c-d57c-4e6c-a1ab-f31b6f81eb79",
+    "oldPrice": "none"
   },
   {
     "author": "Walt Whitman",
@@ -1355,7 +1451,8 @@
     "rating": 3.91,
     "ratingAmount": 2563,
     "price": 13.99,
-    "id": "93f1d77d-cc8a-413b-b499-af98a617a24f"
+    "id": "93f1d77d-cc8a-413b-b499-af98a617a24f",
+    "oldPrice": "none"
   },
   {
     "author": "Virginia Woolf",
@@ -1369,7 +1466,8 @@
     "rating": 3.09,
     "ratingAmount": 2580,
     "price": 29.99,
-    "id": "091b47ba-430c-4f66-a2e9-56f8d85c68c1"
+    "id": "091b47ba-430c-4f66-a2e9-56f8d85c68c1",
+    "oldPrice": "none"
   },
   {
     "author": "Virginia Woolf",
@@ -1383,7 +1481,8 @@
     "rating": 1.15,
     "ratingAmount": 4527,
     "price": 6.99,
-    "id": "a3babf65-3dfd-40ac-8afc-1b2b90ee810d"
+    "id": "a3babf65-3dfd-40ac-8afc-1b2b90ee810d",
+    "oldPrice": "none"
   },
   {
     "author": "Marguerite Yourcenar",
@@ -1397,6 +1496,7 @@
     "rating": 3.73,
     "ratingAmount": 1925,
     "price": 7.99,
-    "id": "d42c3fba-4131-40f6-bd81-40fb77691ddc"
+    "id": "d42c3fba-4131-40f6-bd81-40fb77691ddc",
+    "oldPrice": 10.23
   }
 ]
