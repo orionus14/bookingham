@@ -7,9 +7,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setFilter, resetFilters } from '../store/filterSlice'
 import { RootState } from '../store/store'
 import { useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { MoveLeft } from 'lucide-react'
 
-const Filter = () => {
+interface IFilter {
+  setFilterMenu?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Filter: React.FC<IFilter> = ({ setFilterMenu }) => {
 
   const dispatch = useDispatch();
   const filters = useSelector((state: RootState) => state.filters);
@@ -40,12 +45,26 @@ const Filter = () => {
     }
   };
 
+  const handleCloseFilter = () => {
+    if (setFilterMenu) {
+      setFilterMenu(false);
+    }
+  };
+
   useEffect(() => {
     resetAllFilters();
   }, [location])
 
   return (
-    <div className='w-60 p-4 border-r-2'>
+    <div className='relative sm:w-60 w-full h-full p-4 border-r-2 sm:block'>
+
+      <div
+        className='sm:hidden block absolute right-4 top-4 cursor-pointer'
+        onClick={handleCloseFilter}
+      >
+        <MoveLeft />
+      </div>
+
       <h1 className="text-2xl text-center border-b-2 mb-4 p-2">Filter</h1>
       <InputField
         placeholder='Enter the book name...'

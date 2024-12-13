@@ -7,7 +7,10 @@ const BookList = () => {
   return (
     <Provider store={store}>
       <div className='flex'>
-        <Filter />
+        <div className='hidden sm:block'>
+          <Filter />
+        </div>
+        
         <GenerateBooks />
       </div>
     </Provider>

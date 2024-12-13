@@ -6,6 +6,8 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 import DropdownMenu from './DropdownMenu';
 import { Link } from 'react-router';
+import { Filter as FilterIcon } from 'lucide-react';
+import Filter from './Filter';
 
 const GenerateBooks = () => {
     const filters = useSelector((state: RootState) => state.filters);
@@ -13,6 +15,7 @@ const GenerateBooks = () => {
     const itemsPerPage = 6;
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [sortOption, setSortOption] = useState<string | null>(null);
+    const [filterMenu, setFilterMenu] = useState<boolean>(false);
 
     const filteredBooks = useMemo(() => {
         return books.filter((book) => {
@@ -95,10 +98,28 @@ const GenerateBooks = () => {
     }, [currentPage]);
 
     return (
-        <div className='p-4 pb-12 w-full'>
+        <div className='p-4 pb-12 w-full relative'>
             <h1 className="text-2xl text-center border-b-2 mb-4 p-2">All Books</h1>
 
-            <DropdownMenu onSortChange={setSortOption} onResetPage={resetPageToOne} />
+
+            <div className='flex justify-between items-center'>
+                <div
+                    className='cursor-pointer sm:hidden'
+                    onClick={() => setFilterMenu(true)}
+                >
+                    <FilterIcon size={32} />
+                </div>
+
+                <div className='flex justify-end sm:justify-start'>
+                    <DropdownMenu onSortChange={setSortOption} onResetPage={resetPageToOne} />
+                </div>
+            </div>
+
+            {filterMenu && (
+                <div className='absolute top-0 left-0 z-10 bg-white p-4 shadow-lg h-full'>
+                    <Filter setFilterMenu={setFilterMenu} />
+                </div>
+            )}
 
             {filteredBooks.length === 0 ? (
                 <div className="text-center text-xl text-gray-500">

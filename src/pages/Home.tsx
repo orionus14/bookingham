@@ -2,7 +2,7 @@ import Bestsellers from "../components/Bestsellers"
 import Carousel from "../components/Carousel"
 
 const images = [
-  '/carousel/a-Dolls-house.jpg',
+  '/carousel/classic-latin.jpg',
   '/carousel/a-la-recherche-du-temps-perdu.jpg',
   '/carousel/absalom-absalom.jpg',
   '/carousel/gargantua-and-pantagruel.jpg',

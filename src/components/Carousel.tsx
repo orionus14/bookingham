@@ -34,19 +34,19 @@ const Carousel: React.FC<ICarousel> = ({ images }) => {
         <div className="relative z-0 w-full h-[calc(100vh-64px)] mx-auto">
             <div className="overflow-hidden h-full">
                 <div
-                    className="flex transition-transform duration-500"
+                    className="h-full flex transition-transform duration-500"
                     style={{
                         transform: `translateX(-${currentIndex * 100}%)`,
                     }}
                 >
                     {images.map((image, index) => (
-                        <div key={index} className="w-full flex-shrink-0">
-                            <img
-                                src={image}
-                                alt={`Slide ${index}`}
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
+                        <div key={index} className="w-full h-full flex-shrink-0">
+                        <img
+                            src={image}
+                            alt={`Slide ${index}`}
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
                     ))}
                 </div>
             </div>
