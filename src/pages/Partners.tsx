@@ -1,12 +1,12 @@
 import React from 'react'
 import H1Text from '../components/H1Text'
 
-const About = () => {
+const Partners = () => {
   return (
     <div className='p-12'>
-      <H1Text text='Who Are We?' />
+      <H1Text text='Partners' />
     </div>
   )
 }
 
-export default About
+export default Partners

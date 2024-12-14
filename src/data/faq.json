@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the return policy for books?",
+    "answer": "You can return books within 30 days of purchase if they are in their original condition. Please keep your receipt for a hassle-free return."
+  },
+  {
+    "question": "Do you offer discounts for bulk orders?",
+    "answer": "Yes, we provide discounts for bulk purchases. Please contact our support team for more details about bulk order discounts."
+  },
+  {
+    "question": "Can I pre-order upcoming books?",
+    "answer": "Yes, you can pre-order upcoming books through our website. Visit the 'Pre-Orders' section for more information."
+  },
+  {
+    "question": "What are the shipping options available?",
+    "answer": "We offer standard, express, and international shipping. Shipping fees and delivery times vary based on the option selected."
+  },
+  {
+    "question": "Do you sell digital versions of books?",
+    "answer": "Yes, we offer eBooks and audiobooks for many titles. You can find them in the 'Digital Books' section of our store."
+  },
+  {
+    "question": "How can I track my order?",
+    "answer": "Once your order is shipped, you will receive a tracking number via email. Use this number on our 'Order Tracking' page to monitor your shipment."
+  },
+  {
+    "question": "Can I gift wrap the books I purchase?",
+    "answer": "Yes, we offer gift-wrapping services for an additional fee. You can select this option at checkout."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept major credit cards, PayPal, and gift cards. Additional payment options may be available depending on your location."
+  },
+  {
+    "question": "Do you have a loyalty program?",
+    "answer": "Yes, our loyalty program rewards you with points for every purchase. Points can be redeemed for discounts on future orders."
+  },
+  {
+    "question": "Can I find rare or out-of-print books in your store?",
+    "answer": "We specialize in sourcing rare and out-of-print books. If you can't find a specific book, contact us, and we'll do our best to help you locate it."
+  }
+]
