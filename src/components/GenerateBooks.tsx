@@ -101,7 +101,6 @@ const GenerateBooks = () => {
         <div className='p-4 pb-12 w-full relative'>
             <h1 className="text-2xl text-center border-b-2 mb-4 p-2">All Books</h1>
 
-
             <div className='flex justify-between items-center'>
                 <div
                     className='cursor-pointer sm:hidden'

@@ -15,12 +15,14 @@ import Partners from "./pages/Partners"
 import Refund from "./pages/Refund"
 import Delivery from "./pages/Delivery"
 import ScrollToTop from "./components/ScrollToTop"
+import ToTopButton from "./components/ToTopButton"
 
 const App = () => {
   return (
     <>
       <Router>
         <ScrollToTop />
+        <ToTopButton />
         <Navbar />
 
         <Routes>

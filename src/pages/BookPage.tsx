@@ -22,7 +22,7 @@ const BookPage = () => {
           <img
             src={`/${book.imageLink}`}
             alt={book.title}
-            className="w-1/3 rounded shadow-lg"
+            className="w-2/5 rounded shadow-lg"
           />
           <div>
             <Rating rating={book.rating} ratingAmount={book.ratingAmount} title={book.title} />

@@ -13,7 +13,8 @@ const NavItem: React.FC<INavItem> = ({ to, children }) => {
         <NavLink
             to={to}
             className={({ isActive }) =>
-               `${isActive ? activeClass : ''}` 
+               `${isActive ? activeClass : ''}
+            font-semibold` 
             }
         >
             {children}

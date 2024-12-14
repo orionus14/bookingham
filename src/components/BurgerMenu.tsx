@@ -1,8 +1,8 @@
-import NavItem from './NavItem'
+import NavItem from './NavItem';
 
 const BurgerMenu = () => {
     return (
-        <div className='fixed z-10 h-[calc(100vh-64px)] w-1/2 bg-black top-[64px] right-0 px-8 pt-4'>
+        <div className="fixed z-10 h-[calc(100vh-64px)] w-1/2 bg-black top-[64px] right-0 px-8 pt-4 transform transition-transform duration-300 ease-in-out">
             <ul className='flex flex-col items-end gap-y-2'>
                 <li>
                     <NavItem to='/books'>Books</NavItem>
@@ -18,7 +18,7 @@ const BurgerMenu = () => {
                 </li>
             </ul>
         </div>
-    )
+    );
 }
 
-export default BurgerMenu
+export default BurgerMenu;

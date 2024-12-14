@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import BurgerMenu from './BurgerMenu'
 
 const Navbar = () => {
-    const navClass = 'flex justify-between items-center h-16 bg-black text-white px-8  sm:px-12 md:px-16 fixed z-10 w-screen'
+    const navClass = 'flex justify-between items-center h-16 bg-black text-white px-8  sm:px-12 md:px-16 fixed z-10 w-screen bg-[linear-gradient(135deg,_#1e2a47_0%,_#5e3a8c_100%)]'
     const [showBurgerMenu, setShowBurgerMenu] = useState<boolean>(false);
     const location = useLocation();
     const menuRef = useRef<HTMLDivElement | null>(null);
@@ -55,7 +55,7 @@ const Navbar = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="hidden sm:flex space-x-4">
+                <ul className="hidden sm:flex space-x-4">
                     <li>
                         <NavItem to='/books'>Books</NavItem>
                     </li>
@@ -68,7 +68,7 @@ const Navbar = () => {
                     <li>
                         <NavItem to='/faq'>FAQ</NavItem>
                     </li>
-                </div>
+                </ul>
                 <div className='flex sm:hidden'>
                     {showBurgerMenu ? (
                         <div ref={menuRef} className="relative">

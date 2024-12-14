@@ -28,7 +28,7 @@ const DropdownMenu: React.FC<IDropdownMenu> = ({ onSortChange, onResetPage }) =>
             >
                 <div className='flex items-center'>
                     <p className='mr-2'>Sort</p>
-                    <div className={`${dropdownMenu ? 'rotate-180' : ''}`}>
+                    <div className={`transform transition-transform duration-200 ${dropdownMenu ? "rotate-180" : "rotate-0"}`}>
                         <MoveDown size={16} />
                     </div>
                 </div>

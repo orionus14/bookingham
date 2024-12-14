@@ -3,11 +3,11 @@ import { Facebook, Instagram, Linkedin } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className='bg-black px-16 py-8 '>
-      <div className='flex flex-wrap justify-center'>
+    <footer className='bg-[linear-gradient(135deg,_#1e2a47_0%,_#5e3a8c_100%)] border-t-8 border-purple-700 px-16 py-8 '>
+      <div className='flex flex-col sm:flex-row flex-wrap justify-center'>
         <div className='mx-10'>
-          <h3 className='text-white text-xl underline'>About Us</h3>
-          <ul>
+          <h3 className='text-white text-xl underline my-2'>About Us</h3>
+          <ul className='mx-4 sm:mx-0 flex flex-col gap-y-2'>
             <li>
               <HoverText to='/contract'>Public contract (offer)</HoverText>
             </li>
@@ -26,8 +26,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className='mx-10'>
-          <h3 className='text-white text-xl underline'>Help</h3>
-          <ul>
+          <h3 className='text-white text-xl underline my-2'>Help</h3>
+          <ul className='mx-4 sm:mx-0 flex flex-col gap-y-2'>
             <li>
               <HoverText to='/contacts'>Contacts</HoverText>
             </li>
