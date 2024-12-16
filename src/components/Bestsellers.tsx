@@ -8,7 +8,7 @@ const Bestsellers = () => {
   const topBooks = sortedBooks.slice(0, 6);
 
   return (
-    <section className='mt-2'>
+    <section>
       <h1 className='text-center text-white font-semibold text-3xl py-6 bg-[linear-gradient(90deg,_#182848_0%,_#4b6cb7_100%)]'>Bestsellers</h1>
       <hr />
       <ul

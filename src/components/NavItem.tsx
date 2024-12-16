@@ -14,7 +14,7 @@ const NavItem: React.FC<INavItem> = ({ to, children }) => {
             to={to}
             className={({ isActive }) =>
                `${isActive ? activeClass : ''}
-            font-semibold` 
+            font-semibold hover:text-gray-300 transition duration-200` 
             }
         >
             {children}

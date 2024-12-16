@@ -33,8 +33,8 @@ const BookItem: React.FC<IBookItem> = ({ img, title, author, price, oldPrice }) 
                 ) : (
                     <p>&#36;{price.toFixed(2)}</p>
                 )}
-                <p className='text-xl my-2 overflow-hidden text-ellipsis text-nowrap'>{title}</p>
-                <p className='text-gray-500'>{author === 'Unknown' ? '' : author}</p>
+                <p className='text-xl my-2 overflow-hidden text-ellipsis text-nowrap hover:opacity-80 transition duration-200'>{title}</p>
+                <p className='text-gray-500 hover:opacity-80 transition duration-200'>{author === 'Unknown' ? '' : author}</p>
             </div>
         </div>
     )

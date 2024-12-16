@@ -31,7 +31,7 @@ const Carousel: React.FC<ICarousel> = ({ images }) => {
     }, [userInteracted, images.length]);
 
     return (
-        <div className="relative z-0 w-full h-[calc(100vh-64px)] mx-auto">
+        <div className="relative z-0 w-full h-[calc(100vh-64px)] mx-auto bg-[linear-gradient(111.4deg,_rgba(248,248,250,1)_6.5%,_rgba(231,231,232,1)_93.2%)]">
             <div className="overflow-hidden h-full">
                 <div
                     className="h-full flex transition-transform duration-500"

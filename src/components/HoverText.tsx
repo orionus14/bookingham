@@ -10,7 +10,7 @@ const HoverText: React.FC<IHoverText> = ({ to, children }) => {
     return (
         <Link
             to={to}
-            className='text-white hover:text-gray-300 transition'
+            className='text-white hover:text-gray-300 transition duration-200'
         >
             {children}
         </Link>

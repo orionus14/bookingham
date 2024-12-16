@@ -21,7 +21,7 @@ const FAQ = () => {
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-lg font-medium p-2 hover:bg-gray-100"
+              className="w-full flex justify-between items-center text-lg font-medium p-2 hover:bg-gray-100 transition duration-200"
             >
               {item.question}
               <span className={`transform transition-transform duration-200 ${openIndex === index ? "rotate-180" : "rotate-0"}`}>

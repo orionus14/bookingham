@@ -1,6 +1,8 @@
 import { useParams } from "react-router";
 import books from '../data/books.json'
 import Rating from "../components/Rating";
+import { Button } from "@mui/material";
+import { ShoppingCart } from "lucide-react";
 
 const BookPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -38,6 +40,14 @@ const BookPage = () => {
             <p className="text-xl">
               <strong>Price:</strong> ${book.price}
             </p>
+            <div className="mt-4">
+              <Button
+                variant='contained'
+                color='primary'
+              >
+                <ShoppingCart /> <span className="ml-3 font-semibold">Add to Cart</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
