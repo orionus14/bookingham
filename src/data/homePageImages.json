@@ -1,0 +1,22 @@
+[
+    {
+        "src": "/carousel/hemingway.jpg",
+        "text": "The Old Man and the Sea",
+        "to": "/books/643de01f-1303-48dc-9c18-d7a6bd5c5cec"
+    },
+    {
+        "src": "/carousel/dante.jpg",
+        "text": "Check it Out",
+        "to": "/books/c8b1fc52-41b9-4dcc-9651-67ccd094b610"
+    },
+    {
+        "src": "/carousel/discounts.jpg",
+        "text": "Go to Discounts",
+        "to": "/books?hasDiscount=true"
+    },
+    {
+        "src": "/carousel/Classic Latin.jpg",
+        "text": "Go to Classical Latin",
+        "to": "/books?chosenLanguage=Classical%20Latin"
+    }
+]

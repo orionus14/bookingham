@@ -1,8 +1,15 @@
 import { MoveLeft, MoveRight } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router';
+
+interface CarouselItem {
+    src: string;
+    text: string;
+    to: string;
+}
 
 interface ICarousel {
-    images: string[]
+    images: CarouselItem[];
 }
 
 const Carousel: React.FC<ICarousel> = ({ images }) => {
@@ -31,7 +38,7 @@ const Carousel: React.FC<ICarousel> = ({ images }) => {
     }, [userInteracted, images.length]);
 
     return (
-        <div className="relative z-0 w-full h-[calc(100vh-64px)] mx-auto bg-[linear-gradient(111.4deg,_rgba(248,248,250,1)_6.5%,_rgba(231,231,232,1)_93.2%)]">
+        <div className="relative z-0 w-full h-[calc(100vh-64px)] mx-auto p-2">
             <div className="overflow-hidden h-full">
                 <div
                     className="h-full flex transition-transform duration-500"
@@ -40,16 +47,25 @@ const Carousel: React.FC<ICarousel> = ({ images }) => {
                     }}
                 >
                     {images.map((image, index) => (
-                        <div key={index} className="w-full h-full flex-shrink-0">
-                        <img
-                            src={image}
-                            alt={`Slide ${index}`}
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
+                        <div key={index} className="w-full h-full flex-shrink-0 relative">
+                            <img
+                                src={image.src}
+                                alt={`Slide ${index}`}
+                                className="w-full h-full object-contain"
+                            />
+                            <Link
+                                to={image.to}
+                                className='absolute bottom-16 left-1/2 transform -translate-x-1/2 bg-white text-gray-600 transition duration-300 border-2 border-gray-400 hover:bg-gray-200 rounded font-semibold'
+                            >
+                                <div className='flex p-3'>
+                                    <span className='mr-2'>{image.text}</span> <MoveRight />
+                                </div>
+                            </Link>
+                        </div>
                     ))}
                 </div>
             </div>
+
 
             <button
                 onClick={() => {

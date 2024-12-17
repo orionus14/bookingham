@@ -6,7 +6,7 @@ import { Button, Slider } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter, resetFilters } from '../store/filterSlice'
 import { RootState } from '../store/store'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useSearchParams } from 'react-router-dom'
 import React, { useEffect } from 'react'
 import { MoveLeft } from 'lucide-react'
 
@@ -18,6 +18,7 @@ const Filter: React.FC<IFilter> = ({ setFilterMenu }) => {
 
   const dispatch = useDispatch();
   const filters = useSelector((state: RootState) => state.filters);
+  const [searchParams] = useSearchParams();
 
   const languages = [...new Set(books.map(book => book.language))];
   const pages: string[] = ['1 - 300', '301 - 600', '600+'];
@@ -54,6 +55,22 @@ const Filter: React.FC<IFilter> = ({ setFilterMenu }) => {
   useEffect(() => {
     resetAllFilters();
   }, [location])
+
+  useEffect(() => {
+    for (const [key, value] of searchParams.entries()) {
+      if (key === 'chosenLanguage') {
+        handleFilterChange('chosenLanguage', [value]);
+      } else if (key === 'minPrice') {
+        handleFilterChange('minPrice', value);
+      } else if (key === 'maxPrice') {
+        handleFilterChange('maxPrice', value);
+      } else if (key === 'bookName') {
+        handleFilterChange('bookName', value);
+      } else if (key === 'hasDiscount') {
+        handleFilterChange('hasDiscount', value === 'true');
+      }
+    }
+  }, [searchParams]);
 
   return (
     <div className='relative sm:w-60 w-full h-full p-4 border-r-2 sm:block'>

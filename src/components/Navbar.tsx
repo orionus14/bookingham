@@ -69,15 +69,18 @@ const Navbar = () => {
                         <NavItem to='/faq'>FAQ</NavItem>
                     </li>
                 </ul>
-                <div className='flex sm:hidden'>
-                    {showBurgerMenu ? (
-                        <div ref={menuRef} className="relative">
-                            <X size={32} onClick={() => setShowBurgerMenu(false)} />
-                            <BurgerMenu />
-                        </div>
-                    ) : (
-                        <Menu size={32} onClick={() => setShowBurgerMenu(true)} />
-                    )}
+                <div className="flex sm:hidden">
+                    <Menu
+                        size={32}
+                        onClick={() => setShowBurgerMenu(true)}
+                        className={`${showBurgerMenu ? 'hidden' : ''}`}
+                    />
+                    <X
+                        size={32}
+                        className={`${showBurgerMenu ? '' : 'hidden'}`}
+                        onClick={() => setShowBurgerMenu(false)}
+                    />
+                    <BurgerMenu isVisible={showBurgerMenu} />
                 </div>
             </nav>
         </header>
